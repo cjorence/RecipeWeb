@@ -8,37 +8,37 @@
 </head>
 <body > 
     <!-- Navbar -->
-    <nav class="flex h-28 justify-between items-center bg-stone-700 gap-60 px-6">
-        <img src="/images/Logo2.jpg" alt="" class="h-20 w-36">
-        <ul class="flex gap-10 text-amber-100 font-medium">
+    <nav class="md:flex flex h-auto justify-center items-center bg-stone-700 gap-60 px-6 pt-5">
+        <img src="/images/Logo2.jpg" alt="" class="md:h-20 md:w-36 pb-3 h-20 w-auto">
+        <!-- <ul class="flex gap-10 text-amber-100 font-medium">
             <li><a href="">Home</a></li>
             <li><a href="">Recipes</a></li> 
             <li><a href="">Categories</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
-        </ul>
-        <div class="flex items-center border-2 border-gray-300 rounded-lg overflow-hidden max-w-md font-medium">
+        </ul> -->
+        <!-- <div class="flex items-center border-2 border-gray-300 rounded-lg overflow-hidden max-w-md font-medium">
             <input type="text" placeholder="Search..." class="px-4 py-2 w-full text-amber-100">
             <button class="bg-orange-600 hover:bg-orange-700 text-amber-100 px-4 py-2 cursor-pointer">Search</button>
-        </div>
+        </div> -->
     </nav>
     
     <!-- Holding Hero Section, Recipe Listing, and Footer -->
-    <section class="bg-amber-50 h-auto w-auto px-6">
+    <section class="bg-amber-50 h-auto w-auto px-6 pt-5">
         
         <!-- Hero Section -->
-        <main class="grid grid-cols-2 pt-5">
+        <main class="flex flex-col-reverse md:flex-row gap-5">
             <div class="">
-                <p class="text-7xl text-green-700"><b>Discover Delicious Recipes for Every Ocassion</b></p>
+                <p class="text-3xl md:text-7xl text-green-700"><b>Discover Delicious Recipes for Every Ocassion</b></p>
                 <p class="text-2xl text-yellow-900 mt-2">Explore a variety of dishes and cook like a pro!</p>
-                <button class="bg-orange-600 rounded-2xl px-4 py-2 mt-10 hover:bg-orange-700 cursor-pointer text-amber-50">Browse Recipes</button>
+                <!-- <button class="bg-orange-600 rounded-2xl px-4 py-2 mt-10 hover:bg-orange-700 cursor-pointer text-amber-50">Browse Recipes</button> -->
             </div>
-            <img src="/images/hero section image.jfif" alt="" class="h-auto w-auto">
+            <img src="/images/hero section image.jfif" alt="" class="h-auto w-auto md:h-96 md:w-auto">
         </main>
          
         <!-- Five Recipes/Recipe Listing Section -->
         <h1 class="text-yellow-900 text-4xl mt-40 font-bold">Recipe</h1>
-        <div class="grid grid-cols-5 text-center mt-7 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 text-center mt-7 gap-8 lg:grid-cols-5">
 
             <!-- Chicken Recipe -->
             <div id="openChicken" class="h-52 w-full cursor-pointer">
@@ -75,29 +75,44 @@
         <!-- Chicken Modal/Recipe Details -->
         <div id="chickenModal" class="hidden bg-amber-100 inset-0 fixed px-6 py-3">
             <div class="flex justify-between">
-                <span class="text-yellow-900 text-5xl font-bold">Chicken Recipes</span>
+                <span class="text-yellow-900 text-2xl md:text-5xl font-bold">Chicken Recipes</span>
                 <button id="closeChicken" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-lg cursor-pointer font-bold text-amber-50">Back</button>
             </div>
 
             <!-- Holding Recipes -->
-            <div class="grid grid-cols-3 mt-7 text-center gap-40 ">
+            <div class="grid grid-cols-3 mt-7 text-center gap-15 ">
 
                 <!-- 1st Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-52 md:w-auto">
                     <img src="/images/Recipe images/Chicken Recipes/Chicken-ala-King-Recipe-750x750.webp" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Filipino Chicken Ala King With Creamy Sauce</span>
+                    <span class="text-yellow-900 font-medium md:text-2xl">Chicken Ala King</span>
                 </div>
 
                 <!-- 2nd Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-52 md:w-auto">
                     <img src="/images/Recipe images/Chicken Recipes/Sticky-chicken-500x500.jpg" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Sticky Crispy Chicken</span>
+                    <span class="text-yellow-900 font-medium md:text-2xl">Crispy Chicken</span>
                 </div>
 
                 <!-- 3rd Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-52 md:w-auto">
                     <img src="/images/Recipe images/Chicken Recipes/how-to-cook-caldereta-500x500.jpg" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Calderetang Manok</span>
+                    <span class="text-yellow-900 font-medium md:text-2xl">Calderetang Manok</span>
+                </div>
+
+                <div class="h-15 w-20 md:h-52 md:w-auto">
+                    <img src="/images/Recipe images/Chicken Recipes/1.jpg" alt="" class="h-full w-full object-cover rounded-lg">
+                    <span class="text-yellow-900 font-medium md:text-2xl">Fried Chicken</span>
+                </div>
+
+                <div class="h-15 w-20 md:h-52 md:w-auto">
+                    <img src="/images/Recipe images/Chicken Recipes/2.jpg" alt="" class="h-full w-full object-cover rounded-lg">
+                    <span class="text-yellow-900 font-medium md:text-2xl">Chicken Caldereta</span>
+                </div>
+
+                <div class="h-15 w-20 md:h-52 md:w-auto">
+                    <img src="/images/Recipe images/Chicken Recipes/3.jpg" alt="" class="h-full w-full object-cover rounded-lg">
+                    <span class="text-yellow-900 font-medium md:text-2xl">Chicken Afritada</span>
                 </div>
             </div>
         </div>
@@ -105,27 +120,27 @@
         <!-- Beef Modal/Recipe Details -->
         <div id="modalBeef" class="hidden fixed inset-0 bg-amber-100 px-6 py-3">
             <div class="flex justify-between">
-                <span class="text-yellow-900 text-5xl font-bold">Beef Recipes</span>
+                <span class="text-yellow-900 text-2xl md:text-5xl font-bold">Beef Recipes</span>
                 <button id="closeBeef" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-lg text-amber-50 font-bold cursor-pointer">Back</button>
             </div>
 
             <!-- Holding Recipes -->
-            <div class="grid grid-cols-3 text-center gap-40 mt-7">
+            <div class="grid grid-cols-3 text-center gap-15 mt-7">
                 <!-- 1st Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Beef Recipes/beef-nilaga-recipe-panlasang-pinoy-500x500.webp" alt="" class="h-full w-full object-cover rounded-lg ">
-                    <span class="text-yellow-900 text-2xl font-medium">Better Beef Nilaga</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Better Beef Nilaga</span>
                 </div>
                 <!-- 2nd Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Beef Recipes/corned-beef-nachos-filipino-recipe-jpg-webp-500x500.webp" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Loaded Nachos With Corneed Beef</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Loaded Nachos With Corneed Beef</span>
                 </div>
 
                 <!-- 3rd Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Beef Recipes/wmremove-transformed.webp" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Beef Asado Recipe</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Beef Asado Recipe</span>
                 </div>
             </div>
         </div>
@@ -133,78 +148,81 @@
         <!-- Tofu Modal/Recipe Details -->
         <div id="modalTofu" class="bg-amber-100 fixed inset-0 hidden px-6 py-3">
             <div class="flex justify-between">
-                <span class="text-yellow-900 text-5xl font-bold">Tofu Recipes</span>
+                <span class="text-yellow-900 text-2xl md:text-5xl font-bold">Tofu Recipes</span>
                 <button id="closeTofu" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 font-bold rounded-lg text-amber-50 cursor-pointer">Back</button>
             </div>
 
             <!-- Holding Recipes -->
-            <div class="grid grid-cols-3 gap-40 text-center mt-7">
+            <div class="grid grid-cols-3 gap-15 text-center mt-7">
                 <!-- 1st Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Tofu Recipes/creamy-tofu_-750x750.jpg" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Creamy Tofu With Mixed Vegetables</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Creamy Tofu With Mixed Vegetables</span>
                 </div>    
                 <!-- 2nd Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Tofu Recipes/Tofu-Tuna-750x680.jpg" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Tofu Streak In Honey And Rosemary With Tuna & Tomato Sauce</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Tofu Streak In Honey And Rosemary With Tuna & Tomato Sauce</span>
                 </div>
                 <!-- 3rd Recipe -->
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Tofu Recipes/wmremove-transformed.jpeg" alt="" class="h-full w-full object-cover rounded-lg">
-                    <span class="text-yellow-900 text-2xl font-medium">Tofu With Mushroom Gravy</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Tofu With Mushroom Gravy</span>
                 </div>
             </div>
         </div>
 
         <div id="modalPork" class="bg-amber-100 hidden fixed inset-0 px-6 py-3">
             <div class="flex justify-between">
-                <span class="text-yellow-900 text-5xl font-bold">Pork Recipe</span>
+                <span class="text-yellow-900 text-2xl md:text-5xl font-bold">Pork Recipe</span>
                 <button id="closePork" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 text-white cursor-pointer rounded-lg">Back</button>
             </div>
-            <div class="grid grid-cols-3 text-center gap-40 mt-7">
-                <div class="h-72 w-auto">
+            <div class="grid grid-cols-3 text-center gap-15 mt-7">
+                <div class="h-15 w-20 md:h-72 md:w-auto ">
                     <img src="/images/Recipe images/Pork Recipes/How-to-Cook-Estofado-jpg-750x750.webp" alt="" class="h-full w-full object-cover">
-                    <span class="text-yellow-900 text-2xl font-medium">Estofado(Probinsiya style)</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Estofado</span>
                 </div>
     
-                <div class="h-72 w-auto ">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Pork Recipes/Crispy-Ulo-Recipe-jpg-750x750.webp" alt="" class="h-full w-full object-cover">
-                    <span class="text-yellow-900 text-2xl font-medium">Crispy Ulo And Lechon Sauce</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Crispy Ulo And Lechon Sauce</span>
                 </div>
     
-                <div class="h-72 w-auto">
+                <div class="h-15 w-20 md:h-72 md:w-auto">
                     <img src="/images/Recipe images/Pork Recipes/Grilled-Liempo-with-Barbecue-Sauce-jpg-500x500.webp" alt="" class="h-full w-full object-cover">
-                    <span class="text-yellow-900 text-2xl font-medium">Grilled Liempo With Barbecue Sauce</span>
+                    <span class="text-yellow-900 md:text-2xl font-medium">Grilled Liempo With Barbecue Sauce</span>
                 </div>
             </div>
         </div>
 
         <div id="modalEgg" class="hidden fixed inset-0 bg-amber-100 px-6 py-3">
             <div class="flex justify-between">
-                <span class="text-yellow-900 text-5xl font-bold">Egg Recipe</span>
-                <button id="closeEgg" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 cursor-pointer">Back</button>
+                <span class="text-yellow-900 text-2xl md:text-5xl font-bold">Egg Recipe</span>
+                <button id="closeEgg" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 cursor-pointer rounded-lg ">Back</button>
             </div>
-            <div class="grid grid-cols-3 text-center gap-40 mt-7">
-                    <div class="h-72 w-auto">
+            <div class="grid grid-cols-3 text-center gap-15 mt-7">
+                    <div class="h-15 w-20 md:h-72 md:w-auto">
                         <img src="/images/Recipe images/Egg Recipes/Hawaiian-loco-moco-jpg-webp-500x500.webp" alt="" class="h-full w-full object-cover">
-                        <span class="text-yellow-900 text-2xl font-medium ">Loco Moco Recipe</span>
+                        <span class="text-yellow-900 md:text-2xl font-medium ">Loco Moco Recipe</span>
                     </div>
-                    <div class="h-72 w-auto">
+                    <div class="h-15 w-20 md:h-72 md:w-auto">
                         <img src="/images/Recipe images/Egg Recipes/Egg-Foo-Young-500x375.jpg" alt="" class="h-full w-full object-cover ">
-                        <span class="text-yellow-900 text-2xl font-medium">Egg Foo Young Recipe</span>
+                        <span class="text-yellow-900 md:text-2xl font-medium">Egg Foo Young Recipe</span>
                     </div>
-                    <div class="h-72 w-auto">
+                    <div class="h-15 w-20 md:h-72 md:w-auto">
                         <img src="/images/Recipe images/Egg Recipes/Eggs-Benedict-Recipe.jpg " alt="" class="h-full w-full object-cover">
-                        <span class="text-yellow-900 text-2xl font-medium">Egg Benedict</span>
+                        <span class="text-yellow-900 md:text-2xl font-medium">Egg Benedict</span>
                     </div>
             </div>
         </div>
-
-
-
-
     </section>
+    <footer>
+        <div class="mt-10 bg-stone-700 h-28 flex flex-col justify-center items-center">
+            <p class="">orence@gmail.com | +63 967 226 5671</p>
+            <span class="">©2025 RecipeWebsite. All rights reserved.</span>
+        </div>
+    </footer>
+
     <script>
         // Chicken condition for modal
         // start
